@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Table(name = "order_tbl")
 public class OrderDO {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "user_id")
